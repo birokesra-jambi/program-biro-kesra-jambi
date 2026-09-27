@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -95,7 +94,7 @@
 
         /* 1. KONTEN HALAMAN BERANDA */
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('Biro copy.jpg');
+            background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('image/Biro.jpg');
             background-size: cover;
             background-position: center;
             height: 450px;
@@ -147,13 +146,14 @@
     <!-- HEADER / NAVBAR -->
     <header>
         <div class="logo">
-            <img src="logo.jpg" alt="Logo Pemprov Jambi">
+            <img src="image/logo.jpg" alt="Logo Pemprov Jambi">
             <h1>BIRO KESRA JAMBI</h1>
         </div>
         <nav>
             <button class="nav-btn active" onclick="bukaHalaman('beranda', this)">Beranda</button>
             <button class="nav-btn" onclick="bukaHalaman('profil', this)">Profil</button>
             <button class="nav-btn" onclick="bukaHalaman('program', this)">Program</button>
+            <button class="nav-btn" onclick="bukaHalaman('kontak', this)">kontak</button>
         </nav>
     </header>
 
@@ -184,7 +184,7 @@
                 <!-- TENTANG KAMI WITH IMAGE -->
                 <div style="background: #ffffff; border-radius: 15px; overflow: hidden; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12); border: 1px solid #e0e0e0; margin-bottom: 30px; display: flex; flex-wrap: wrap;">
                     <div style="flex: 1; min-width: 280px; max-height: 250px; overflow: hidden;">
-                        <img src="Biro.jpg" alt="Gedung Biro Kesra" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="image/Biro.jpg" alt="Gedung Biro Kesra" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <div style="flex: 1.2; min-width: 280px; padding: 25px; background: linear-gradient(135deg, #ffffff 0%, #f4fbf7 100%); display: flex; flex-direction: column; justify-content: center;">
                         <h3 style="color: #0b5d3b; margin-bottom: 10px; font-size: 20px; font-weight: bold; border-left: 4px solid #e67e22; padding-left: 10px;">
@@ -206,7 +206,7 @@
                             <h3 style="color: #0b5d3b; font-size: 20px; font-weight: bold;">Visi</h3>
                         </div>
                         <p style="font-size: 15px; color: #1a1a1a; line-height: 1.6; font-weight: 500; background: rgba(255, 255, 255, 0.7); padding: 12px; border-radius: 8px;">
-                            "Mewujudkan Masyarakat Provinsi Jambi yang Sejahtera, Agamis, Mandiri, dan Berbudaya."
+                            " Mewujudkan Jambi Mantap Berdaya Saing dan Berkelanjutan Tahun 2029 di Bawah Ridho Allah SWT."
                         </p>
                     </div>
 
@@ -217,9 +217,9 @@
                             <h3 style="color: #d35400; font-size: 20px; font-weight: bold;">Misi</h3>
                         </div>
                         <ul style="font-size: 14px; color: #1a1a1a; line-height: 1.6; padding-left: 20px; font-weight: 500; text-align: left;">
-                            <li style="margin-bottom: 8px;">Meningkatkan kualitas kehidupan keagamaan dan toleransi antarumat beragama.</li>
-                            <li style="margin-bottom: 8px;">Meningkatkan jangkauan serta perlindungan dan bantuan sosial.</li>
-                            <li>Mengembangkan pembinaan kebudayaan, kepemudaan, dan olahraga daerah.</li>
+                            <li style="margin-bottom: 8px;">Memantapkan Tata Kelola Pemerintahan yang Efektif dan Efisien.</li>
+                            <li style="margin-bottom: 8px;">Memantapkan Daya Saing Daerah dan Produktivitas Bidang Pertanian, Perdagangan, Industri dan Pariwisata.</li>
+                            <li>Memantapkan  Keberlanjutan  Pembangunan dan Kualitas  Sumber Daya Manusia.</li>
                         </ul>
                     </div>
                 </div>
@@ -268,12 +268,27 @@
                         <span style="display: inline-block; background: #e67e22; color: white; font-size: 13px; padding: 6px 14px; border-radius: 20px; font-weight: bold;">Lihat Detail Kegiatan →</span>
                     </div>
 
-                    <!-- KARTU BINA MENTAL SPIRITUAL -->
-                    <div style="background: #ffffff; width: 280px; padding: 25px 20px; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); border-top: 5px solid #27ae60; border-left: 1px solid #c8e6c9; text-align: center;">
-                        <div style="background: #27ae60; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; margin: 0 auto 15px;">📖</div>
-                        <h3 style="color: #1e8449; margin-bottom: 10px; font-size: 20px; font-weight: bold;">Bina Mental Spiritual</h3>
-                        <p style="font-size: 14px; color: #555; line-height: 1.5;">Program pembinaan mental dan spiritual bagi masyarakat serta aparatur di wilayah Provinsi Jambi.</p>
-                    </div>
+                    <!-- KARTU BEASISWA TAHFIDZ AL-QUR'AN -->
+<div onclick="bukaModalTahfidz()" 
+     style="background: linear-gradient(145deg, #ffffff, #f4fbf7); width: 280px; padding: 25px 20px; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); border-top: 5px solid #27ae60; border-left: 1px solid #c8e6c9; text-align: center; cursor: pointer; transition: all 0.3s ease;">
+
+    <div style="background: #27ae60; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; margin: 0 auto 15px;">
+        🎓
+    </div>
+
+    <h3 style="color: #1e8449; margin-bottom: 10px; font-size: 19px; font-weight: bold;">
+        Beasiswa Tahfidz Al-Qur'an
+    </h3>
+
+    <p style="font-size: 13px; color: #555; line-height: 1.5; margin-bottom: 15px;">
+        Program bantuan pendidikan bagi penghafal Al-Qur'an melalui Program Pro Jambi Agamis.
+    </p>
+
+    <span style="display: inline-block; background: #27ae60; color: white; font-size: 13px; padding: 6px 14px; border-radius: 20px; font-weight: bold;">
+        Lihat Detail Program →
+    </span>
+
+</div>
 
                 </div>
             </section>
@@ -300,7 +315,7 @@
                     <div style="display: flex; gap: 15px; margin-bottom: 20px; flex-wrap: wrap;">
                         <div style="flex: 1; min-width: 250px; background: #fafafa; border-radius: 10px; border: 1px solid #e0e0e0; overflow: hidden; box-shadow: 0 3px 8px rgba(0,0,0,0.05);">
                             <div style="height: 170px; overflow: hidden;">
-                                <img src="safari1.jpg" alt="Pelaksanaan Safari Subuh" style="width: 100%; height: 100%; object-fit: cover;">
+                                <img src="image/image/safari1.jpg" alt="Pelaksanaan Safari Subuh" style="width: 100%; height: 100%; object-fit: cover;">
                             </div>
                             <div style="padding: 10px;">
                                 <p style="font-size: 12px; color: #444; line-height: 1.4; margin: 0;">
@@ -311,7 +326,7 @@
 
                         <div style="flex: 1; min-width: 250px; background: #fafafa; border-radius: 10px; border: 1px solid #e0e0e0; overflow: hidden; box-shadow: 0 3px 8px rgba(0,0,0,0.05);">
                             <div style="height: 170px; overflow: hidden;">
-                                <img src="safari2.jpg" alt="Penyerahan Bantuan CSR" style="width: 100%; height: 100%; object-fit: cover;">
+                                <img src="image/image/safari2.jpg" alt="Penyerahan Bantuan CSR" style="width: 100%; height: 100%; object-fit: cover;">
                             </div>
                             <div style="padding: 10px;">
                                 <p style="font-size: 12px; color: #444; line-height: 1.4; margin: 0;">
@@ -327,57 +342,504 @@
                 </div>
             </div>
 
-            <!-- POPUP MODAL EMBARKASI HAJI -->
-<div id="modalHaji" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 2000; justify-content: center; align-items: center; padding: 20px; backdrop-filter: blur(4px);">
-    <div style="background: white; border-radius: 15px; max-width: 650px; width: 100%; max-height: 90vh; overflow-y: auto; padding: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); position: relative; text-align: left;">
-        <button onclick="tutupModalHaji()" style="position: absolute; top: 15px; right: 15px; background: #e74c3c; color: white; border: none; width: 32px; height: 32px; border-radius: 50%; font-size: 18px; font-weight: bold; cursor: pointer;">✕</button>
 
-        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px; border-bottom: 2px solid #e0e0e0; padding-bottom: 12px;">
-            <span style="font-size: 28px;">🕋</span>
+
+<!-- ================================================= -->
+<!-- POPUP DETAIL PENYELENGGARAAN HAJI -->
+<!-- ================================================= -->
+
+<div id="modalHaji" 
+     style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 2000; justify-content: center; align-items: center; padding: 20px; backdrop-filter: blur(4px);">
+
+    <div style="background: white; border-radius: 15px; max-width: 700px; width: 100%; max-height: 90vh; overflow-y: auto; padding: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); position: relative; text-align: left;">
+
+        <!-- TOMBOL TUTUP -->
+        <button onclick="tutupModalHaji()" 
+                style="position: absolute; top: 15px; right: 15px; background: #e74c3c; color: white; border: none; width: 32px; height: 32px; border-radius: 50%; font-size: 18px; font-weight: bold; cursor: pointer;">
+            ✕
+        </button>
+
+
+        <!-- JUDUL -->
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px; border-bottom: 2px solid #e0e0e0; padding-bottom: 12px;">
+
+            <span style="font-size: 30px;">🕋</span>
+
             <div>
-                <h3 style="color: #d35400; font-size: 20px; margin: 0;">Penyelenggaraan Ibadah Haji</h3>
-                <p style="color: #0b5d3b; font-weight: bold; font-size: 12px; margin: 0;">Embarkasi Haji Antara Provinsi Jambi Tahun 1447 H / 2026 M</p>
+                <h3 style="color: #d35400; font-size: 21px; margin: 0;">
+                    Penyelenggaraan Ibadah Haji
+                </h3>
+
+                <p style="color: #0b5d3b; font-weight: bold; font-size: 12px; margin: 4px 0 0;">
+                    Embarkasi Haji Antara Provinsi Jambi Tahun 1447 H / 2026 M
+                </p>
             </div>
+
         </div>
 
-        <p style="font-size: 14px; color: #333; line-height: 1.6; margin-bottom: 20px; text-align: justify; background: #fffdf8; border-left: 4px solid #e67e22; padding: 12px; border-radius: 4px;">
-            Program kegiatan <strong>Pemberangkatan dan Pemulangan Jemaah Haji Embarkasi Haji Antara Provinsi Jambi</strong> diselenggarakan oleh Biro Kesejahteraan Rakyat untuk memfasilitasi pelayanan akomodasi, kesehatan, dan transportasi jemaah haji asal Provinsi Jambi agar berjalan tertib, lancar, dan nyaman.
-        </p>
 
-        <h4 style="color: #d35400; font-size: 15px; margin-bottom: 10px; font-weight: bold;">Dokumentasi Kegiatan:</h4>
-        
+        <!-- INFORMASI UTAMA -->
+        <div style="font-size: 14px; color: #333; line-height: 1.7; margin-bottom: 20px; text-align: justify; background: #fffdf8; border-left: 4px solid #e67e22; padding: 15px; border-radius: 4px;">
+
+            <p style="margin: 0;">
+                Pemerintah Provinsi Jambi melalui 
+                <strong>Biro Kesejahteraan Rakyat (Kesra) Setda Provinsi Jambi</strong> 
+                menyiapkan anggaran sebesar 
+                <strong>Rp39.969.000.000</strong> untuk kegiatan sewa pesawat domestik 
+                bagi jemaah haji tahun 2026. Anggaran tersebut diperuntukkan bagi layanan 
+                keberangkatan dan pemulangan calon jemaah haji dari Jambi menuju Batam 
+                dan sebaliknya.
+            </p>
+
+        </div>
+
+
+        <!-- JUMLAH JEMAAH -->
+        <div style="background: #f4fbf7; border-radius: 10px; padding: 15px; margin-bottom: 15px; border-left: 4px solid #0b5d3b;">
+
+            <h4 style="color: #0b5d3b; margin-bottom: 8px; font-size: 15px;">
+                👥 Jumlah Jemaah dan Petugas
+            </h4>
+
+            <p style="font-size: 13px; color: #444; line-height: 1.6; margin: 0; text-align: justify;">
+                Jumlah calon jemaah haji dan petugas yang akan diberangkatkan pada tahun 2026 
+                tercatat sebanyak <strong>3.306 orang</strong>. Jumlah tersebut terdiri atas 
+                calon jemaah haji, pembimbing KBIHU, petugas haji daerah, serta petugas kloter 
+                dari seluruh kabupaten/kota di Provinsi Jambi.
+            </p>
+
+        </div>
+
+
+        <!-- TUJUAN KEGIATAN -->
+        <div style="background: #fff8e1; border-radius: 10px; padding: 15px; margin-bottom: 15px; border-left: 4px solid #e67e22;">
+
+            <h4 style="color: #d35400; margin-bottom: 8px; font-size: 15px;">
+                🎯 Tujuan Kegiatan
+            </h4>
+
+            <p style="font-size: 13px; color: #444; line-height: 1.6; margin: 0; text-align: justify;">
+                Kegiatan ini bertujuan untuk menjaga kondisi fisik jemaah, khususnya mereka 
+                yang berasal dari daerah yang jauh, sehingga memiliki waktu untuk beristirahat 
+                di <strong>Asrama Haji Jambi</strong> sebelum melanjutkan penerbangan menuju Batam.
+            </p>
+
+        </div>
+
+
+        <!-- EFISIENSI PERJALANAN -->
+        <div style="background: #f4fbf7; border-radius: 10px; padding: 15px; margin-bottom: 15px; border-left: 4px solid #27ae60;">
+
+            <h4 style="color: #1e8449; margin-bottom: 8px; font-size: 15px;">
+                ✈️ Efisiensi Perjalanan
+            </h4>
+
+            <p style="font-size: 13px; color: #444; line-height: 1.6; margin: 0; text-align: justify;">
+                Penggunaan moda transportasi udara dinilai dapat mempercepat perjalanan, 
+                terutama dalam proses menuju embarkasi haji. Penggunaan pesawat dapat 
+                menghemat waktu perjalanan <strong>lebih dari enam jam</strong> dibandingkan 
+                dengan moda transportasi lainnya. Dengan demikian, jemaah diharapkan dapat 
+                tiba dalam kondisi lebih siap untuk mengikuti proses keberangkatan haji.
+            </p>
+
+        </div>
+
+
+        <!-- PELAYANAN KESEHATAN DAN CIQ -->
+        <div style="background: #f5f5f5; border-radius: 10px; padding: 15px; margin-bottom: 20px; border-left: 4px solid #3498db;">
+
+            <h4 style="color: #2874a6; margin-bottom: 8px; font-size: 15px;">
+                🏥 Pelayanan Kesehatan dan CIQ
+            </h4>
+
+            <p style="font-size: 13px; color: #444; line-height: 1.6; margin: 0; text-align: justify;">
+                Aspek pelayanan kesehatan juga menjadi salah satu pertimbangan. Selain mengurangi 
+                kelelahan selama perjalanan, proses 
+                <strong>CIQ (Customs, Immigration, and Quarantine)</strong> dilakukan di 
+                <strong>Asrama Haji Jambi</strong> sehingga jemaah dapat menjalani tahapan 
+                pemeriksaan sebelum melanjutkan perjalanan menuju embarkasi.
+            </p>
+
+        </div>
+
+
+        <!-- RINGKASAN INFORMASI -->
+        <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px;">
+
+            <div style="flex: 1; min-width: 130px; background: #0b5d3b; color: white; padding: 12px; border-radius: 8px; text-align: center;">
+                <div style="font-size: 18px; font-weight: bold;">
+                    Rp39,969 M
+                </div>
+                <div style="font-size: 11px;">
+                    Anggaran
+                </div>
+            </div>
+
+            <div style="flex: 1; min-width: 130px; background: #e67e22; color: white; padding: 12px; border-radius: 8px; text-align: center;">
+                <div style="font-size: 18px; font-weight: bold;">
+                    3.306
+                </div>
+                <div style="font-size: 11px;">
+                    Jemaah & Petugas
+                </div>
+            </div>
+
+            <div style="flex: 1; min-width: 130px; background: #27ae60; color: white; padding: 12px; border-radius: 8px; text-align: center;">
+                <div style="font-size: 18px; font-weight: bold;">
+                    Jambi ↔ Batam
+                </div>
+                <div style="font-size: 11px;">
+                    Rute Penerbangan
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- DOKUMENTASI -->
+        <h4 style="color: #d35400; font-size: 15px; margin-bottom: 10px; font-weight: bold;">
+            📸 Dokumentasi Kegiatan
+        </h4>
+
         <div style="display: flex; gap: 15px; margin-bottom: 20px; flex-wrap: wrap;">
-            <!-- FOTO 1: PEMBERANGKATAN -->
+
+            <!-- FOTO 1 -->
             <div style="flex: 1; min-width: 250px; background: #fafafa; border-radius: 10px; border: 1px solid #e0e0e0; overflow: hidden; box-shadow: 0 3px 8px rgba(0,0,0,0.05);">
+
                 <div style="height: 170px; overflow: hidden;">
-                    <img src="haji1.jpg" alt="Pemberangkatan Jemaah Haji" style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="image/image/haji1.jpg" 
+                         alt="Pemberangkatan Jemaah Haji" 
+                         style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
+
                 <div style="padding: 10px;">
                     <p style="font-size: 12px; color: #444; line-height: 1.4; margin: 0;">
-                        <strong>Foto 1:</strong> Pelepasan dan pemberangkatan jemaah calon haji Provinsi Jambi menuju Asrama Haji dan Bandara Embarkasi.
+                        <strong>Foto 1:</strong> Pelepasan dan pemberangkatan jemaah calon haji 
+                        Provinsi Jambi menuju Asrama Haji dan Bandara Embarkasi.
                     </p>
                 </div>
+
             </div>
 
-            <!-- FOTO 2: PEMULANGAN -->
+
+            <!-- FOTO 2 -->
             <div style="flex: 1; min-width: 250px; background: #fafafa; border-radius: 10px; border: 1px solid #e0e0e0; overflow: hidden; box-shadow: 0 3px 8px rgba(0,0,0,0.05);">
+
                 <div style="height: 170px; overflow: hidden;">
-                    <img src="haji2.jpg" alt="Pemulangan Jemaah Haji" style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="image/image/haji2.jpg" 
+                         alt="Pemulangan Jemaah Haji" 
+                         style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
+
                 <div style="padding: 10px;">
                     <p style="font-size: 12px; color: #444; line-height: 1.4; margin: 0;">
-                        <strong>Foto 2:</strong> Penyambutan kepulangan jemaah haji Provinsi Jambi setelah menyelesaikan seluruh rangkaian ibadah di Tanah Suci.
+                        <strong>Foto 2:</strong> Penyambutan kepulangan jemaah haji Provinsi Jambi 
+                        setelah menyelesaikan seluruh rangkaian ibadah di Tanah Suci.
                     </p>
                 </div>
+
             </div>
+
         </div>
 
+
+        <!-- TOMBOL TUTUP -->
         <div style="text-align: right;">
-            <button onclick="tutupModalHaji()" style="background: #e67e22; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: bold; cursor: pointer;">Tutup</button>
+
+            <button onclick="tutupModalHaji()" 
+                    style="background: #e67e22; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: bold; cursor: pointer;">
+                Tutup
+            </button>
+
         </div>
+
+    </div>
+
+</div>
+
+<!-- ================================================= -->
+<!-- POPUP DETAIL BEASISWA TAHFIDZ AL-QUR'AN -->
+<!-- ================================================= -->
+
+<div id="modalTahfidz" 
+     style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 2000; justify-content: center; align-items: center; padding: 20px; backdrop-filter: blur(4px);">
+
+    <div style="background: white; border-radius: 15px; max-width: 700px; width: 100%; max-height: 90vh; overflow-y: auto; padding: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); position: relative; text-align: left;">
+
+        <!-- TOMBOL TUTUP -->
+        <button onclick="tutupModalTahfidz()" 
+                style="position: absolute; top: 15px; right: 15px; background: #e74c3c; color: white; border: none; width: 32px; height: 32px; border-radius: 50%; font-size: 18px; font-weight: bold; cursor: pointer;">
+            ✕
+        </button>
+
+
+        <!-- JUDUL -->
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px; border-bottom: 2px solid #e0e0e0; padding-bottom: 12px;">
+
+            <span style="font-size: 30px;">🎓</span>
+
+            <div>
+                <h3 style="color: #1e8449; font-size: 21px; margin: 0;">
+                    Beasiswa Tahfidz Al-Qur'an
+                </h3>
+
+                <p style="color: #0b5d3b; font-weight: bold; font-size: 12px; margin: 4px 0 0;">
+                    Program Pro Jambi Agamis Tahun 2026
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- INFORMASI UTAMA -->
+        <div style="font-size: 14px; color: #333; line-height: 1.7; margin-bottom: 20px; text-align: justify; background: #f4fbf7; border-left: 4px solid #27ae60; padding: 15px; border-radius: 4px;">
+
+            <p style="margin: 0;">
+                Pemerintah Provinsi Jambi melalui 
+                <strong>Biro Kesejahteraan Rakyat (Kesra) Setda Provinsi Jambi</strong> 
+                melaksanakan <strong>Program Pro Jambi Agamis</strong>, salah satunya melalui 
+                pemberian bantuan <strong>Beasiswa Tahfidz Al-Qur'an</strong>. Program ini 
+                merupakan bentuk dukungan Pemerintah Provinsi Jambi terhadap pembinaan 
+                generasi muda penghafal Al-Qur'an serta peningkatan pendidikan keagamaan.
+            </p>
+
+        </div>
+
+
+        <!-- JUMLAH PENERIMA -->
+        <div style="background: #f4fbf7; border-radius: 10px; padding: 15px; margin-bottom: 15px; border-left: 4px solid #0b5d3b;">
+
+            <h4 style="color: #0b5d3b; margin-bottom: 8px; font-size: 15px;">
+                👥 Jumlah Penerima
+            </h4>
+
+            <p style="font-size: 13px; color: #444; line-height: 1.6; margin: 0; text-align: justify;">
+                Pada tahun anggaran <strong>2026</strong>, program Beasiswa Tahfidz Al-Qur'an 
+                dialokasikan untuk <strong>300 penerima</strong>.
+            </p>
+
+        </div>
+
+
+        <!-- TUJUAN KEGIATAN -->
+        <div style="background: #fff8e1; border-radius: 10px; padding: 15px; margin-bottom: 15px; border-left: 4px solid #e67e22;">
+
+            <h4 style="color: #d35400; margin-bottom: 8px; font-size: 15px;">
+                🎯 Tujuan Kegiatan
+            </h4>
+
+            <p style="font-size: 13px; color: #444; line-height: 1.6; margin: 0; text-align: justify;">
+                Pemberian Beasiswa Tahfidz Al-Qur'an bertujuan untuk memberikan dukungan 
+                pendidikan kepada para penghafal Al-Qur'an, mendorong peningkatan pembinaan 
+                keagamaan, serta mendukung terwujudnya generasi muda Provinsi Jambi yang 
+                memiliki kemampuan akademik dan nilai-nilai keagamaan.
+            </p>
+
+        </div>
+
+
+        <!-- ALOKASI ANGGARAN -->
+        <div style="background: #f4fbf7; border-radius: 10px; padding: 15px; margin-bottom: 15px; border-left: 4px solid #27ae60;">
+
+            <h4 style="color: #1e8449; margin-bottom: 8px; font-size: 15px;">
+                💰 Alokasi Anggaran 2026
+            </h4>
+
+            <p style="font-size: 13px; color: #444; line-height: 1.6; margin: 0; text-align: justify;">
+                Untuk pelaksanaan Program Beasiswa Tahfidz Al-Qur'an tahun 2026, 
+                dialokasikan anggaran sebesar:
+            </p>
+
+            <div style="font-size: 25px; font-weight: bold; color: #0b5d3b; text-align: center; margin-top: 10px;">
+                Rp1.500.000.000
+            </div>
+
+            <p style="font-size: 12px; color: #777; text-align: center; margin-top: 5px;">
+                Status pelaksanaan tahun 2026: <strong>Dalam Proses</strong>
+            </p>
+
+        </div>
+
+
+        <!-- RINGKASAN PROGRAM -->
+        <h4 style="color: #1e8449; font-size: 15px; margin-bottom: 10px; font-weight: bold;">
+            📌 Ringkasan Program 2026
+        </h4>
+
+        <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px;">
+
+            <!-- PENERIMA -->
+            <div style="flex: 1; min-width: 130px; background: #0b5d3b; color: white; padding: 12px; border-radius: 8px; text-align: center;">
+                <div style="font-size: 20px; font-weight: bold;">
+                    300
+                </div>
+                <div style="font-size: 11px;">
+                    Penerima Beasiswa
+                </div>
+            </div>
+
+            <!-- ANGGARAN -->
+            <div style="flex: 1; min-width: 130px; background: #27ae60; color: white; padding: 12px; border-radius: 8px; text-align: center;">
+                <div style="font-size: 20px; font-weight: bold;">
+                    Rp1,5 M
+                </div>
+                <div style="font-size: 11px;">
+                    Alokasi Anggaran 2026
+                </div>
+            </div>
+
+            <!-- PROGRAM -->
+            <div style="flex: 1; min-width: 130px; background: #e67e22; color: white; padding: 12px; border-radius: 8px; text-align: center;">
+                <div style="font-size: 16px; font-weight: bold;">
+                    Pro Jambi Agamis
+                </div>
+                <div style="font-size: 11px;">
+                    Beasiswa Tahfidz Al-Qur'an
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- STATUS -->
+        <div style="background: #fff8e1; border-radius: 10px; padding: 12px; margin-bottom: 20px; text-align: center; border: 1px solid #ffe0b2;">
+
+            <span style="font-size: 13px; color: #555;">
+                Status Pelaksanaan:
+            </span>
+
+            <strong style="color: #d35400; font-size: 14px;">
+                Dalam Proses
+            </strong>
+
+        </div>
+
+
+        <!-- TOMBOL TUTUP -->
+        <div style="text-align: right;">
+
+            <button onclick="tutupModalTahfidz()" 
+                    style="background: #27ae60; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: bold; cursor: pointer;">
+                Tutup
+            </button>
+
+        </div>
+
     </div>
 </div>
+           
+</div>
     </main>
+    <!-- HALAMAN 4: KONTAK -->
+<div id="kontak" class="page-section">
+    <section class="container" style="padding: 40px 20px; max-width: 950px; margin: 0 auto;">
+
+        <!-- JUDUL -->
+        <div style="text-align: center; margin-bottom: 30px;">
+            <h2 style="color: #0b5d3b; font-size: 32px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">
+                Kontak Kami
+            </h2>
+
+            <div style="width: 80px; height: 4px; background: #e67e22; margin: 8px auto 0; border-radius: 2px;"></div>
+
+            <p style="margin-top: 15px; color: #555; font-size: 15px;">
+                Hubungi Biro Kesejahteraan Rakyat Provinsi Jambi untuk informasi dan pelayanan.
+            </p>
+        </div>
+
+        <!-- KARTU KONTAK -->
+        <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+
+            <!-- ALAMAT -->
+            <div style="flex: 1; min-width: 250px; background: white; padding: 25px; border-radius: 15px; box-shadow: 0 6px 20px rgba(0,0,0,0.1); border-top: 5px solid #0b5d3b; text-align: center;">
+
+                <div style="background: #0b5d3b; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 23px; margin: 0 auto 15px;">
+                    📍
+                </div>
+
+                <h3 style="color: #0b5d3b; margin-bottom: 10px;">
+                    Alamat Kantor
+                </h3>
+
+                <p style="font-size: 14px; color: #555; line-height: 1.7;">
+                    Jl. Jend. A. Yani No. 1<br>
+                    Telanaipura, Jambi<br>
+                    Provinsi Jambi<br>
+                    <strong>Kode Pos 36128</strong>
+                </p>
+
+            </div>
+
+
+            <!-- TELEPON -->
+            <div style="flex: 1; min-width: 250px; background: white; padding: 25px; border-radius: 15px; box-shadow: 0 6px 20px rgba(0,0,0,0.1); border-top: 5px solid #e67e22; text-align: center;">
+
+                <div style="background: #e67e22; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 23px; margin: 0 auto 15px;">
+                    ☎️
+                </div>
+
+                <h3 style="color: #d35400; margin-bottom: 10px;">
+                    Telepon
+                </h3>
+
+                <p style="font-size: 14px; color: #555; line-height: 1.6;">
+                    Biro Kesejahteraan Rakyat<br>
+                    Sekretariat Daerah Provinsi Jambi
+                </p>
+
+                <a href="tel:074160593"
+                   style="display: inline-block; margin-top: 10px; background: #e67e22; color: white; padding: 8px 18px; border-radius: 20px; text-decoration: none; font-size: 13px; font-weight: bold;">
+                    📞 (0741) 60593
+                </a>
+
+            </div>
+
+
+            <!-- EMAIL -->
+            <div style="flex: 1; min-width: 250px; background: white; padding: 25px; border-radius: 15px; box-shadow: 0 6px 20px rgba(0,0,0,0.1); border-top: 5px solid #27ae60; text-align: center;">
+
+                <div style="background: #27ae60; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 23px; margin: 0 auto 15px;">
+                    ✉️
+                </div>
+
+                <h3 style="color: #1e8449; margin-bottom: 10px;">
+                    Email
+                </h3>
+
+                <p style="font-size: 14px; color: #555; line-height: 1.6;">
+                    Email Umum Sekretariat Daerah<br>
+                    Pemerintah Provinsi Jambi
+                </p>
+
+                <a href="mailto:setda@jambiprov.go.id"
+                   style="display: inline-block; margin-top: 10px; background: #27ae60; color: white; padding: 8px 18px; border-radius: 20px; text-decoration: none; font-size: 13px; font-weight: bold;">
+                     birokesraprovinsijambi@gmail.com
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- INFORMASI KONTAK -->
+        <div style="margin-top: 25px; background: linear-gradient(135deg, #0b5d3b, #145a32); padding: 25px; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.15); text-align: center; color: white;">
+
+            <h3 style="font-size: 21px; margin-bottom: 10px;">
+                📞 Informasi Kontak
+            </h3>
+
+            <p style="font-size: 14px; line-height: 1.7; color: #e8f5e9;">
+                Biro Kesejahteraan Rakyat Provinsi Jambi<br>
+                Jl. Jend. A. Yani No. 1, Telanaipura, Jambi<br>
+                Kode Pos 36128<br>
+                Telepon: <strong>(0741) 60593</strong><br>
+                Email: <strong>birokesraprovinsijambi@gmail.com</strong>
+            </p>
+
+        </div>
+
+    </section>
+</div>
 
     <!-- FOOTER -->
     <footer>
@@ -418,6 +880,15 @@
 
         function tutupModalHaji() {
             document.getElementById('modalHaji').style.display = 'none';
+        }
+
+        // Modal Beasiswa Tahfidz Al-Qur'an
+        function bukaModalTahfidz() {
+            document.getElementById('modalTahfidz').style.display = 'flex';
+        }
+
+        function tutupModalTahfidz() {
+            document.getElementById('modalTahfidz').style.display = 'none';
         }
     </script>
 
